@@ -252,6 +252,7 @@ span{
     background-color:#fff;
     height: 280px;
     width:280px;
+    overflow: hidden;
 }
 .grid-item:nth-child(odd) {
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
