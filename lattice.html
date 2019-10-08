@@ -33,22 +33,22 @@
         <div class="grid-container">
             
             <a class="grid-item" href="/Images/lattice/lat01.jpg">
-                <img src="/Images/lattice/lat01.jpg" alt=""> 
+                <img src="/Images/lattice/lat01.jpg" title="Mallox" alt="Mallox"> 
             </a>
             <a class="grid-item" href="/Images/lattice/lat02.jpg">
-                <img src="/Images/lattice/lat02.jpg" alt=""> 
+                <img src="/Images/lattice/lat02.jpg" title="Kipseli" alt="Kipseli"> 
             </a>
             <a class="grid-item" href="/Images/lattice/lat03.jpg">
-                <img src="/Images/lattice/lat03.jpg" alt=""> 
+                <img src="/Images/lattice/lat03.jpg" title="min1of" alt="min1of"> 
             </a>
             <a class="grid-item" href="/Images/lattice/lat04.jpg">
-                <img src="/Images/lattice/lat04.jpg" alt="">  
+                <img src="/Images/lattice/lat04.jpg" title="Echo" alt="Echo">  
             </a>
             <a class="grid-item" href="/Images/lattice/lat05.jpg">
-                <img src="/Images/lattice/lat05.jpg" alt=""> 
+                <img src="/Images/lattice/lat05.jpg" title="surfGrid" alt="surfGrid"> 
             </a>
             <a class="grid-item" href="/Images/lattice/lat06.jpg">
-                <img src="/Images/lattice/lat06.jpg" alt=""> 
+                <img src="/Images/lattice/lat06.jpg" title="ophone" alt="ophone"> 
             </a>
         </div>
         
@@ -75,7 +75,12 @@
 
 var lightbox = $('.grid-container a').simpleLightbox(
     {showCounter:false,
-    disableRightClick:	true
+    disableRightClick:	true,
+    captions:true,
+    captionsData:'title',
+    captionClass:'caption',
+    captionPosition:"outside",
+    className:simple-lightbox
     },
     
     );

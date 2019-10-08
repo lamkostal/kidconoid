@@ -33,22 +33,22 @@
         <div class="grid-container">
             
             <a class="grid-item" href="/Images/generative/genera-01.jpg">
-                <img src="/Images/generative/genera-01.jpg" alt=""> 
+                <img src="/Images/generative/genera-01.jpg" title="Whale" alt="Whale"> 
             </a>
             <a class="grid-item" href="/Images/generative/genera-02.jpg">
-                <img src="/Images/generative/genera-02.jpg" alt=""> 
+                <img src="/Images/generative/genera-02.jpg" title="WildRosa" alt="WildRosa"> 
             </a>
             <a class="grid-item" href="/Images/generative/genera-04.jpg">
-                <img src="/Images/generative/genera-04.jpg" alt=""> 
+                <img src="/Images/generative/genera-04.jpg" title="CrazyLady" alt="CrazyLady"> 
             </a>
             <a class="grid-item" href="/Images/generative/genera-07.jpg">
-                <img src="/Images/generative/genera-07.jpg" alt="">  
+                <img src="/Images/generative/genera-07.jpg" title="Coquettte" alt="Coquettte">  
             </a>
             <a class="grid-item" href="/Images/generative/genera-08.jpg">
-                <img src="/Images/generative/genera-08.jpg" alt=""> 
+                <img src="/Images/generative/genera-08.jpg" title="Sir" alt="Sir"> 
             </a>
             <a class="grid-item" href="/Images/generative/genera-09.jpg">
-                <img src="/Images/generative/genera-09.jpg" alt=""> 
+                <img src="/Images/generative/genera-09.jpg" title="Curvy" alt="Curvy"> 
             </a>
         </div>
         
@@ -75,7 +75,12 @@
 
 var lightbox = $('.grid-container a').simpleLightbox(
     {showCounter:false,
-    disableRightClick:	true
+    disableRightClick:	true,
+    captions:true,
+    captionsData:'title',
+    captionClass:'caption',
+    captionPosition:"outside",
+    className:'simple-lightbox'
     },
     
     );

@@ -604,3 +604,14 @@ transition: all 0.5s;
     
       
     }
+    .caption{
+        color:grey !important;
+        background: transparent !important;
+        padding:10px 0 !important;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .sl-overlay{
+     background:rgba(0, 0, 0, 0.767) !important;
+    }

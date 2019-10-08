@@ -33,22 +33,22 @@
         <div class="grid-container">
             
             <a class="grid-item" href="/Images/round/round01.jpg">
-                <img src="/Images/round/round01.jpg" alt=""> 
+                <img src="/Images/round/round01.jpg" title="Drops" alt="Drops"> 
             </a>
             <a class="grid-item" href="/Images/round/round02.jpg">
-                <img src="/Images/round/round02.jpg" alt=""> 
+                <img src="/Images/round/round02.jpg" title="Phasma" alt="Phasma"> 
             </a>
             <a class="grid-item" href="/Images/round/round03.jpg">
-                <img src="/Images/round/round03.jpg" alt=""> 
+                <img src="/Images/round/round03.jpg" title="Tokens" alt="Tokens"> 
             </a>
             <a class="grid-item" href="/Images/round/round04.jpg">
-                <img src="/Images/round/round04.jpg" alt="">  
+                <img src="/Images/round/round04.jpg" title="TokenTree" alt="TokenTree">  
             </a>
             <a class="grid-item" href="/Images/round/round05.jpg">
-                <img src="/Images/round/round05.jpg" alt=""> 
+                <img src="/Images/round/round05.jpg" title="BW" alt="BW"> 
             </a>
             <a class="grid-item" href="/Images/round/round06.jpg">
-                <img src="/Images/round/round06.jpg" alt=""> 
+                <img src="/Images/round/round06.jpg" title="Bubbly" alt="Bubbly"> 
             </a>
         </div>
         
@@ -75,7 +75,12 @@
 
 var lightbox = $('.grid-container a').simpleLightbox(
     {showCounter:false,
-    disableRightClick:	true
+    disableRightClick:	true,
+    captions:true,
+    captionsData:'title',
+    captionClass:'caption',
+    captionPosition:"outside",
+    className:	'simple-lightbox'
     },
     
     );

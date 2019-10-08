@@ -33,22 +33,22 @@
         <div class="grid-container">
             
             <a class="grid-item" href="/Images/macrostract/macrostract-01.jpg">
-                <img src="/Images/macrostract/macrostract-01.jpg" alt=""> 
+                <img src="/Images/macrostract/macrostract-01.jpg" title="Hedge" alt="Hedge"> 
             </a>
             <a class="grid-item" href="/Images/macrostract/macrostract-02.jpg">
-                <img src="/Images/macrostract/macrostract-02.jpg" alt=""> 
+                <img src="/Images/macrostract/macrostract-02.jpg" title="Pile" alt="Pile"> 
             </a>
             <a class="grid-item" href="/Images/macrostract/macrostract-03.jpg">
-                <img src="/Images/macrostract/macrostract-03.jpg" alt=""> 
+                <img src="/Images/macrostract/macrostract-03.jpg" title="Punchy" alt="Punchy"> 
             </a>
             <a class="grid-item" href="/Images/macrostract/macrostract-04.jpg">
-                <img src="/Images/macrostract/macrostract-04.jpg" alt="">  
+                <img src="/Images/macrostract/macrostract-04.jpg" title="inStraw" alt="inStraw">  
             </a>
             <a class="grid-item" href="/Images/macrostract/macrostract-05.jpg">
-                <img src="/Images/macrostract/macrostract-05.jpg" alt=""> 
+                <img src="/Images/macrostract/macrostract-05.jpg" title="Glassy" alt="Glassy"> 
             </a>
             <a class="grid-item" href="/Images/macrostract/macrostract-06.jpg">
-                <img src="/Images/macrostract/macrostract-06.jpg" alt=""> 
+                <img src="/Images/macrostract/macrostract-06.jpg" title="Slinky" alt="Slinky"> 
             </a>
         </div>
         
@@ -75,7 +75,12 @@
 
 var lightbox = $('.grid-container a').simpleLightbox(
     {showCounter:false,
-    disableRightClick:	true
+    disableRightClick:	true,
+    captions:true,
+    captionsData:'title',
+    captionClass:'caption',
+    captionPosition:"outside",
+    className:	'simple-lightbox'
     },
     
     );
